@@ -7,11 +7,11 @@ app.get('/api', (req,res) => {
 })
 
 app.get('/api/hello', (req,res) => {
-    res.json({msg: 'Hello'})
+    res.json({msg: 'Hello', status: 200})
 })
 
 app.get('/api/dashboard', (req,res) => {
-    res.json({msg: 'dashboard'})
+    res.json({msg: 'dashboard', status: 201})
 })
 
 app.listen(3000, () => console.log('Running on port 3000'))
